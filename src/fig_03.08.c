@@ -42,4 +42,5 @@ int main(void){
 	else { // if no grades were entered, output message
 		puts("No grades were entered");
 	} // end else
+	
 } // end function main
