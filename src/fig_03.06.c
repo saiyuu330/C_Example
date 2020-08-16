@@ -1,4 +1,4 @@
-// Fig. 3.6" fig03_06.c
+// Fig. 3.6: fig03_06.c
 // Class average program with counter-controlled iteration.
 #include <stdio.h>
 
