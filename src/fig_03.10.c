@@ -36,4 +36,5 @@ int main(void){
 	if(passes > 8){
 		puts("Bonus to instructor!");
 	} // end if
+	
 } // end function main
