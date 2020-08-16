@@ -17,4 +17,5 @@ int main(void){
 	printf("%d\n", c); // print 5
 	printf("%d\n", ++c); // preincrement then print 6
 	printf("%d\n", c); // print 6
+	
 } // end function main
