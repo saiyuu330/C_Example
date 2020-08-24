@@ -1,5 +1,5 @@
 // Fig. 6.16: fig06_16.c
-// Survey data analysis with ararys:
+// Survey data analysis with arrays:
 // computing the mean, median and mode of the data.
 #include <stdio.h>
 #define SIZE 99
@@ -55,7 +55,7 @@ void mean(const unsigned int answer[]){
 
 // sort array and determine median element's value
 void median(unsigned int answer[]){
-	printf("\n%s\n%s\n%s\n%s", "********", "Median", "********, The unsorted array of response is");
+	printf("\n%s\n%s\n%s\n%s", "********", "Median", "********", "The unsorted array of response is");
 	
 	printArray(answer); // output unsorted array
 	
@@ -86,14 +86,14 @@ void mode(unsigned int freq[], const unsigned int answer[]){
 	}
 	
 	// output headers for result columns
-	printf("%s%11s%19s\n\n%54s\n%54\n\n", "Response", "Frequency", "Histogram", "1	1	2	2", "5	0	5	0	5");
+	printf("%s%11s%19s\n\n%54s\n%54s\n\n", "Response", "Frequency", "Histogram", "1   1   2   2", "5   0   5   0   5");
 	
 	// output results
 	unsigned int largest = 0; // represents largest frequency
 	unsigned int modeValue = 0; // represents most frequent response
 	
-	for(rating = 1; rating <= 9; ++rating){
-		printf("%8u%11u			", rating, freq[rating]);
+	for(size_t rating = 1; rating <= 9; ++rating){
+		printf("%8lu%11u			", rating, freq[rating]);
 		
 		// keep track of mode value and largest frequency value
 		if(freq[rating] > largest){
